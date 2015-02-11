@@ -33,8 +33,8 @@
 
 <match stdall.docker.filtered.**>
     type elasticsearch
-    host {{ .Env.ES_HOST }}
-    port {{ .Env.ES_PORT }}
+    host elasticsearch
+    port 9200
     index_name fluentd
     type_name fluentd
     logstash_format true
